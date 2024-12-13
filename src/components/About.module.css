@@ -1,0 +1,164 @@
+.about-page {
+	margin-left: 350px;
+	padding: 100px;
+  }
+  
+.form-group {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+  }
+  
+.search-bar {
+	width: 400px;
+	height: 15px;
+	padding: 15px 30px;
+	border: 0;
+	border-radius: 5px;
+	font-size: 15px;
+	background-color: #F2F2F2;
+  }
+  
+.icon {
+	position: absolute;
+	left: 10px;
+	color: #888;
+}
+  
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); 
+	gap: 25px;
+  }
+  
+.image-item {
+	padding: 0;
+	text-align: start; /* Center align text and images */
+	position: relative; /* Ensure relative positioning for absolute positioning inside */
+  }
+  
+.image-item img {
+	max-width: 360px; /* Adjusted to viewport width for responsive design */
+	height: 250px;
+	display: block;
+	margin: 0 auto 0px; /* Adjust margin as needed */
+	position: relative; /* Ensure relative positioning for absolute positioning inside */
+	z-index: 1; /* Ensure image stays on top */
+  }
+
+ 
+.item-details {
+	width: 100%;
+	height: 0px;
+	color: white; /* Adjust text color for better contrast */
+	padding: 10px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2; /* Ensure details are above image */
+  }
+
+  .item-details  .iconSmall {
+	font-size: 16px;
+	color: rgb(14, 13, 13);
+	margin-left: -10px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+  }
+
+  
+  .filters {
+	height: 45px;
+	width: 80px;
+	padding: 5px 5px;
+	border: 0;
+	border-radius: 6px;
+	font-size: 15px;
+	background-color: #E9F5F9;
+	margin-left: 5px;
+  }
+  
+  .pagination {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+  }
+  
+  .pagination button {
+	background-color: #f0f0f0;
+	color: #333;
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin: 5px;
+	margin-top: 30px;
+	cursor: pointer;
+	border-radius: 50%; /* Make the button circular */
+	width: 30px; /* Ensure fixed width for circular shape */
+	height: 30px; /* Ensure fixed height for circular shape */
+  }
+  
+  .pagination button.active {
+	background-color: #909499; /* Highlight color for active page */
+	color: white;
+	border-color: #93bef5;
+  }
+
+.tag {
+	margin-top: 4px; /* Adjust this value as needed */
+	margin-left: 4px; /* Optional: adds space between title and tag icon */
+	vertical-align: middle; /* Aligns the icon with the text */
+  }
+
+  .tag:hover,
+  .tag.selected {
+	background-color: #f0f0f0;
+  }
+
+  .disabled {
+	opacity: 0.5; /* Make it semi-transparent */
+	cursor: not-allowed; /* Change cursor to indicate it's disabled */
+  }
+
+  .comment-input-container {
+	position: relative;
+	z-index: 10; /* Ensure it is above other elements */
+	border: 1px solid #ddd;
+	padding: 10px;
+	background: #fff;
+  }
+  
+  .comment-input {
+	width: calc(100% - 22px);
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  .appUserId-input {
+	width: calc(100% - 22px);
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  .button {
+	padding: 10px 15px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 250px;
+  }
+  
+  .comment-button:hover {
+	background-color: #0056b3;
+  }

@@ -1,0 +1,52 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	background-color: #333;
+	color: #fff;
+	font-family: Arial, sans-serif;
+  }
+  
+  .nav-left {
+	display: flex;
+  }
+  
+  .nav-links {
+	list-style: none;
+	display: flex;
+	gap: 1.5rem;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .nav-link {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
+	transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+	color: #00bcd4;
+  }
+  
+  .active-link {
+	border-bottom: 2px solid #00bcd4;
+	padding-bottom: 0.2rem;
+  }
+  
+  .nav-right {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+  }
+  
+  .profile-icon {
+	font-size: 1.5rem;
+  }
+  
+  .user-info {
+	font-size: 1rem;
+  }
+  
