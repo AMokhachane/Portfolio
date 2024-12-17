@@ -1,164 +1,121 @@
-.about-page {
-	margin-left: 350px;
-	padding: 100px;
-  }
-  
-.form-group {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 50px;
-  }
-  
-.search-bar {
-	width: 400px;
-	height: 15px;
-	padding: 15px 30px;
-	border: 0;
-	border-radius: 5px;
-	font-size: 15px;
-	background-color: #F2F2F2;
-  }
-  
-.icon {
-	position: absolute;
-	left: 10px;
-	color: #888;
+.loginContainer {
+    display: flex;
+    height: 100vh;
 }
-  
-.image-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr); 
-	gap: 25px;
-  }
-  
-.image-item {
-	padding: 0;
-	text-align: start; /* Center align text and images */
-	position: relative; /* Ensure relative positioning for absolute positioning inside */
-  }
-  
-.image-item img {
-	max-width: 360px; /* Adjusted to viewport width for responsive design */
-	height: 250px;
-	display: block;
-	margin: 0 auto 0px; /* Adjust margin as needed */
-	position: relative; /* Ensure relative positioning for absolute positioning inside */
-	z-index: 1; /* Ensure image stays on top */
-  }
 
- 
-.item-details {
-	width: 100%;
-	height: 0px;
-	color: white; /* Adjust text color for better contrast */
-	padding: 10px;
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: start;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: 2; /* Ensure details are above image */
-  }
+.left {
+    width: 70%;
+    background-color: #f5f0ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-  .item-details  .iconSmall {
-	font-size: 16px;
-	color: rgb(14, 13, 13);
-	margin-left: -10px;
-	margin-right: 15px;
-	margin-bottom: 15px;
-  }
+.boldText {
+    font-weight: bold;
+	font-size: 50px;
+    margin-left: 30px; /* Adjust this value as needed */
+}
 
-  
-  .filters {
-	height: 45px;
-	width: 80px;
-	padding: 5px 5px;
-	border: 0;
-	border-radius: 6px;
-	font-size: 15px;
-	background-color: #E9F5F9;
-	margin-left: 5px;
-  }
-  
-  .pagination {
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-  }
-  
-  .pagination button {
-	background-color: #f0f0f0;
-	color: #333;
-	border: 1px solid #ccc;
-	padding: 5px;
-	margin: 5px;
-	margin-top: 30px;
-	cursor: pointer;
-	border-radius: 50%; /* Make the button circular */
-	width: 30px; /* Ensure fixed width for circular shape */
-	height: 30px; /* Ensure fixed height for circular shape */
-  }
-  
-  .pagination button.active {
-	background-color: #909499; /* Highlight color for active page */
-	color: white;
-	border-color: #93bef5;
-  }
+.rightSide {
+    width: 30%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.tag {
-	margin-top: 4px; /* Adjust this value as needed */
-	margin-left: 4px; /* Optional: adds space between title and tag icon */
-	vertical-align: middle; /* Aligns the icon with the text */
-  }
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
 
-  .tag:hover,
-  .tag.selected {
-	background-color: #f0f0f0;
-  }
+.logoSquare {
+    width: 90px;
+    height: 90px;
+    background-color: #FFC0CB;
+    margin-right: 10px;
+    position: relative;
+}
 
-  .disabled {
-	opacity: 0.5; /* Make it semi-transparent */
-	cursor: not-allowed; /* Change cursor to indicate it's disabled */
-  }
+.logoSquare::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d8d8d8;
+    left: 60px;
+    top: 30px;
+}
 
-  .comment-input-container {
-	position: relative;
-	z-index: 10; /* Ensure it is above other elements */
-	border: 1px solid #ddd;
-	padding: 10px;
-	background: #fff;
-  }
-  
-  .comment-input {
-	width: calc(100% - 22px);
-	padding: 8px;
-	margin-bottom: 10px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-  }
-  
-  .appUserId-input {
-	width: calc(100% - 22px);
-	padding: 8px;
-	margin-bottom: 10px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-  }
-  
-  .button {
-	padding: 10px 15px;
-	background-color: #007bff;
-	color: white;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	margin-left: 250px;
-  }
-  
-  .comment-button:hover {
-	background-color: #0056b3;
-  }
+.logoSquare::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    left: 90px;
+    top: 30px;
+}
+
+.Group {
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 350px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font: inter;
+}
+
+.inputField {
+    width: 409px;
+	height: 40px;
+    padding: 0px;
+    border: 1px solid #FFC0CB;
+    border-radius: 5px;
+}
+
+.successMessage {
+    color: green;
+    margin-bottom: 10px;
+}
+
+.errorMessage {
+    color: red;
+    margin-bottom: 5px;
+}
+
+.forgotPasswordAndButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%; /* Ensures full width of the container */
+    margin-top: 20px; /* Adds some space from the input fields */
+    margin-left: 350px;
+}
+
+.forgotPassword {
+    color: #2B4F63;
+    text-decoration: none;
+    margin-right: 20px; /* Adds space between link and button */
+}
+
+.loginButton {
+    width: 104px; /* Set width to 104px */
+    height: 37px; /* Set height to 37px */
+    background-color: #2B4F63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-shrink: 0; /* Ensures the button doesn't shrink */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers text inside the button */
+    margin-right: 415px;
+}
